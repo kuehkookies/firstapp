@@ -1,4 +1,8 @@
 Firstapp::Application.routes.draw do
+  root :to => redirect('/ideas')
+  resources :entries
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
