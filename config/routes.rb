@@ -1,5 +1,7 @@
 Firstapp::Application.routes.draw do
-  root :to => redirect('/ideas')
+  get "pages/info"
+
+  root :to => redirect('/entries')
   resources :entries
 
 
